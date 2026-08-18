@@ -1,0 +1,47 @@
+# EU AI Act Approval Pack - Gordan
+
+## Consulting response: client briefs for Adams Consulting
+
+Four cases. Treat each as a client asking "can we launch this?"
+
+---
+
+### Case 1
+
+Outsourced customer service provider, around 400 agents split between Hamburg and Lisbon, running inbound support for three telecom brands. 
+Attrition is high and quality scores swing wildly between team leads, who currently sample two calls per agent per month. They want a system that runs on live call audio and flags agent stress, frustration and "engagement drop" in real time from tone, pitch, speech rate and pause patterns. 
+Output lands on a team lead dashboard and rolls up into a weekly per agent "wellbeing and composure" score that feeds coaching plans and the quarterly performance review. 
+The engine comes from a speech analytics vendor; the client would tune thresholds on its own archived recordings. Team leads can dismiss any flag, and nobody is disciplined automatically.
+
+### Case 2
+
+Private vocational academy in NRW, roughly 1,200 students a year in IT and logistics certifications, partly funded through Bildungsgutschein. They receive about 3,000 applications for 400 subsidised places and the admissions team cannot keep up, while grading of end of module practical write ups varies a lot between instructors. They want one model that ranks applicants using:
+prior grades, a 
+written motivation text, a 
+short online aptitude test and 
+postcode level completion rates from past cohorts
+A second model that scores practical assessment write ups against a fixed rubric. 
+Admissions staff see the ranked list and can move candidates up or down; instructors see the suggested grade and confirm or change it, and in practice confirm around 90% of the time. Rejected applicants receive a standard letter. Built in house by the academy's two person data team on top of an open weights model.
+
+### Case 3
+
+Real estate marketplace covering DACH, around 90,000 active listings. Agents upload dark, empty, badly framed photos, and listings with weak images get a fraction of the enquiries. Three things are wanted: 
+generate photorealistic furnished versions of empty rooms from the agent's own photos, 
+write the listing description automatically from the structured property data sheet, 
+and run a chatbot on the listing page that answers questions about the property and books viewing slots. 
+Inputs are the uploaded photos, the property data sheet and text from past listings. Agents can edit anything before publishing, though most publish as generated. The people on the other end are buyers and renters browsing listings. The chatbot hands off to a human agent as soon as the conversation turns to price negotiation.
+
+### Case 4
+
+Mid sized beverage producer near Bremen with two bottling lines. Unplanned stoppages cost roughly one shift a week and fill level defects are caught too late, after pallets are already wrapped. 
+They want overhead cameras plus vibration and temperature sensors on the filler and the labeller, with a model that spots bottle defects and predicts bearing failures a few days ahead, feeding a maintenance queue and auto ordering spare parts below a set value. 
+Line operators appear in the camera frame and their badge scans sit in the same timestamped log as the sensor data. Maintenance planners approve every work order before it is issued. Nothing from the system feeds shift planning or individual performance review. 
+Delivered as a managed service by AWS who hosts the models.
+
+
+| Case | Likely category | Why this is your first-pass call | Proposed AI architecture | Provider / deployer / vendor | Required obligations or controls | Decision |
+|---|---|---|---|---|---|---|
+| 1 | | | | | | |
+| 2 | | | | | | |
+| 3 | | | | | | |
+| 4 | | | | | | |
